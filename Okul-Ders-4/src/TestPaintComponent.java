@@ -19,7 +19,7 @@ public class TestPaintComponent extends JFrame{
 
     class NewPanel extends JPanel {
 
-        protected void paintComponent(Graphics g){
+        protected void paintComponent(Graphics g){//Zaten var olan bir şey biz onu override edeceğiz
             super.paintComponent(g);
             g.drawLine(0,0,50,50);
             g.drawString("Merhaba", 0, 40);
