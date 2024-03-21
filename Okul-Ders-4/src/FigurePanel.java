@@ -10,12 +10,14 @@ public class FigurePanel extends JPanel{
     public int type = 1;
     private boolean filled = false;
 
+    //İlk consumuz 
     public FigurePanel() {}
 
     public FigurePanel(int type) {
         this.type = type;
     }
-
+    
+    //Bİr constructor daha oluşturacağız
     public FigurePanel(int type, boolean filled) {
 
         this.type = type;
@@ -28,6 +30,8 @@ public class FigurePanel extends JPanel{
         int width = getWidth();
         int height = getHeight();
 
+        
+        //ne çizmek istiyorum ona göre if else yazıcağız    
         switch (type) {
             case LINE:
                 g.setColor(Color.BLACK);
